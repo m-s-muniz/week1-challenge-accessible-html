@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- changed title to better understand what the website is about to user and to better rank the webpage to search engines that use (SEO)-->
     <title>Horiseon</title>
   </head>
 
   <body>
-    <header>
-
+    <!-- added header tag for semantic structure -->
+    <header class="header">
       <h1>Hori<span class="seo">seo</span>n</h1>
+      <!-- changed div tag to nav tag to correlate to navigation bar-->
       <nav>
         <ul>
           <li>
@@ -24,11 +26,16 @@
             <a href="#social-media-marketing">Social Media Marketing</a>
           </li>
         </ul>
-        </nav>
+      </nav>
     </header>
-    <div class="hero"></div>
-    <div class="content">
-      <div class="search-engine-optimization">
+
+    <div class="hero"></div> <!-- hero background image decorative no alt text needed -->
+
+     <!-- removed div tag and added main tag for semantic structure -->
+     <main class="content">
+
+          <!-- might put id="search-engine-optimization" if needed-->
+      <section  class="search-engine-optimization">
         <img
           src="./assets/images/search-engine-optimization.jpg"
           class="float-left"
@@ -40,10 +47,9 @@
           home. Search Engine Optimization (SEO) allows you to increase your
           visibility and find the right customers for your business.
         </p>
-      </div>
-      <div
-        id="online-reputation-management"
-        class="online-reputation-management"
+      </section>
+          <!-- might remove id="online-reputation-management" if not needed -->
+      <section id="online-reputation-management" class="online-reputation-management"
       >
         <img
           src="./assets/images/online-reputation-management.jpg"
@@ -57,8 +63,9 @@
           control over what potential customers see when they search for your
           business.
         </p>
-      </div>
-      <div id="social-media-marketing" class="social-media-marketing">
+      </section>
+           <!--might remove id="social-media-marketing" if not needed-->
+      <section  id="social-media-marketing" class="social-media-marketing">
         <img
           src="./assets/images/social-media-marketing.jpg"
           class="float-left"
@@ -70,8 +77,9 @@
           to your brand, using analytics to find the right markets and increase
           your lead generation.
         </p>
-      </div>
-    </div>
+      </section>
+    </main>
+
     <div class="benefits">
       <div class="benefit-lead">
         <h3>Lead Generation</h3>
