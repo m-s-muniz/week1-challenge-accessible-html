@@ -25,3 +25,10 @@ THEN they fall in sequential order
 WHEN I view the title element
 THEN I find a concise, descriptive title
 ```
+
+### The URL of the deployed application
+
+https://m-s-muniz.github.io/week1-challenge-accessible-html/#search-engine-optimization
+
+
+![Screen shot](./assets/images/Screen%20Shot%202023-01-30%20at%205.03.41%20PM.png)
