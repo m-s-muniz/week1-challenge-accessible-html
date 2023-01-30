@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <!-- added header tag for semantic structure -->
+    <!-- added header tag for semantic and accessibility structure -->
     <header class="header">
       <h1>Hori<span class="seo">seo</span>n</h1>
       <!-- changed div tag to nav tag to correlate to navigation bar-->
@@ -29,15 +29,17 @@
       </nav>
     </header>
 
-    <div class="hero"></div> <!-- hero background image decorative no alt text needed -->
+    <div class="hero"></div>
+    <!-- hero background image decorative no alt text needed -->
 
-     <!-- removed div tag and added main tag for semantic structure -->
-     <main class="content">
-
-          <!-- might put id="search-engine-optimization" if needed-->
-      <section  class="search-engine-optimization">
+    <!-- removed div tag and added main tag for semantic and accessibility structure -->
+    <main class="content">
+      <!-- added id="search-engine-optimization" to jump from the navigation bar when search engine optimization is clicked on-->
+      <!-- changed section class selector to new consolidated class name -->
+      <section id="search-engine-optimization" class="service">
         <img
           src="./assets/images/search-engine-optimization.jpg"
+          alt="Wooden table with spiral notebook containing Search Engine Optimization structured ideas on cover. Laptop, magnifing glass, pens and coffie cup on table."
           class="float-left"
         />
         <h2>Search Engine Optimization</h2>
@@ -48,11 +50,11 @@
           visibility and find the right customers for your business.
         </p>
       </section>
-          <!-- might remove id="online-reputation-management" if not needed -->
-      <section id="online-reputation-management" class="online-reputation-management"
-      >
+      <!-- changed section class selector to new consolidated class name -->
+      <section id="online-reputation-management" class="service">
         <img
           src="./assets/images/online-reputation-management.jpg"
+          alt="A person using mobile phone while looking at laptop showing a bar graph with increased reputation through the year."
           class="float-right"
         />
         <h2>Online Reputation Management</h2>
@@ -64,10 +66,11 @@
           business.
         </p>
       </section>
-           <!--might remove id="social-media-marketing" if not needed-->
-      <section  id="social-media-marketing" class="social-media-marketing">
+      <!--  changed section class selector to new consolidated class name -->
+      <section id="social-media-marketing" class="service">
         <img
           src="./assets/images/social-media-marketing.jpg"
+          alt="Group of 6 people gathered at a table using things like a laptop and other mobile devices using different types of website or web applications like cloud storage, social media, music"
           class="float-left"
         />
         <h2>Social Media Marketing</h2>
@@ -80,32 +83,43 @@
       </section>
     </main>
 
-    <div class="benefits">
-      <div class="benefit-lead">
+    <!-- Removed div and replaced with aside for better semantic and accessibility structure -->
+    <!-- Consolidated benefit-lead, benefit-brand and benefit-cost to benefit -->
+    <aside class="benefits">
+      <div class="benefit">
         <h3>Lead Generation</h3>
-        <img src="./assets/images/lead-generation.png" />
+        <img
+          src="./assets/images/lead-generation.png"
+          alt="Black icon with a gear going through a funnel with a coin marked with a dollar sign at the bottom of funnel."
+        />
         <p>
           Inbound strategies for lead generation require less work for your
           business, bringing customers directly to your website.
         </p>
       </div>
-      <div class="benefit-brand">
+      <div class="benefit">
         <h3>Brand Awareness</h3>
-        <img src="./assets/images/brand-awareness.png" />
+        <img
+          src="./assets/images/brand-awareness.png"
+          alt="Black icon with a light bulb as a head of a person emitting waves of light."
+        />
         <p>
           Users find your business through paid and organic searches, increasing
           the search ranking and visibility for your business.
         </p>
       </div>
-      <div class="benefit-cost">
+      <div class="benefit">
         <h3>Cost Management</h3>
-        <img src="./assets/images/cost-management.png" />
+        <img
+          src="./assets/images/cost-management.png"
+          alt="Black icon of a gear with three coins market each with a dollar sign on them."
+        />
         <p>
           As the search ranking for your business increases, your advertising
           costs decrease, and you no longer need to advertise your page.
         </p>
       </div>
-    </div>
+    </aside>
     <div class="footer">
       <h2>Made with ❤️️ by Horiseon</h2>
       <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
