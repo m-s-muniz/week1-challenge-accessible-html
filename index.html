@@ -86,7 +86,8 @@
     <!-- Removed div and replaced with aside for better semantic and accessibility structure -->
     <!-- Consolidated benefit-lead, benefit-brand and benefit-cost to benefit -->
     <aside class="benefits">
-      <div class="benefit">
+      <!--  Changed 3 <divs> tags to <section> tags in <aside> section  -->
+      <section class="benefit">
         <h3>Lead Generation</h3>
         <img
           src="./assets/images/lead-generation.png"
@@ -96,8 +97,8 @@
           Inbound strategies for lead generation require less work for your
           business, bringing customers directly to your website.
         </p>
-      </div>
-      <div class="benefit">
+      </section>
+      <section class="benefit">
         <h3>Brand Awareness</h3>
         <img
           src="./assets/images/brand-awareness.png"
@@ -107,8 +108,8 @@
           Users find your business through paid and organic searches, increasing
           the search ranking and visibility for your business.
         </p>
-      </div>
-      <div class="benefit">
+      </section>
+      <section class="benefit">
         <h3>Cost Management</h3>
         <img
           src="./assets/images/cost-management.png"
@@ -118,11 +119,12 @@
           As the search ranking for your business increases, your advertising
           costs decrease, and you no longer need to advertise your page.
         </p>
-      </div>
+      </section>
     </aside>
-    <div class="footer">
+    <!--  Changed <div> tag to "footer" tag  -->
+    <footer class="footer">
       <h2>Made with ❤️️ by Horiseon</h2>
       <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
-    </div>
+    </footer>
   </body>
 </html>
